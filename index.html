@@ -16,7 +16,8 @@
   <!-- Custom Fonts -->
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100italic,100,300,300italic' rel='stylesheet' type='text/css'>
   <!-- Theme CSS -->
-  <link href="css/agency.min.css" rel="stylesheet">
+  <!-- <link href="css/agency.min.css" rel="stylesheet"> -->
+  <link href="css/agency.css" rel="stylesheet">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,6 +25,21 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+  <style media="screen">
+    .step {
+      display: inline-block;
+      padding-bottom: 30px;
+      padding-top: 30px;
+      font-size: 1.4em;
+      color: #617fde;
+    }
+
+    .img-circle {
+      margin-top: 30px;
+    }
+  </style>
+
 </head>
 
 <body id="page-top" class="index">
@@ -46,13 +62,13 @@
             <a href="#page-top"></a>
           </li>
           <li>
-            <a class="page-scroll" href="#about">About Chabblet</a>
+            <a class="page-scroll" href="#about">Join Chabblet</a>
           </li>
           <li>
-            <a class="page-scroll" href="#portfolio">Portfolio</a>
+            <a class="page-scroll" href="#portfolio">About Chabblet</a>
           </li>
           <li>
-            <a class="page-scroll" href="#services">Changing stories</a>
+            <a class="page-scroll" href="#services">Who is it for?</a>
           </li>
           <li>
             <a class="page-scroll" href="#clients">Price</a>
@@ -69,38 +85,39 @@
 
   <!-- Header -->
   <header>
-    <!-- <div class="container">
+    <div class="container">
       <div class="intro-text">
-                <div class="intro-lead-in">Easy Customization</div>
-                <div class="intro-heading">Creative Agency</div>
-                <a href="#about" class="page-scroll btn btn-xl">Learn More</a>
-            </div>
-    </div> -->
-
-    <video width="100%" height="100%" autoplay>
-      <source src="chabble_video.mp4" type="video/mp4">
-      <source src="chabble_sound.ogg" type="video/ogg">
-        Your browser does not support the video tag.
-    </video>
+        <div class="intro-lead-in">Easy Customization</div>
+        <div class="intro-heading">Creative Agency</div>
+        <a href="#about" class="page-scroll btn btn-xl">Learn More</a>
+      </div>
+    </div>
   </header>
-
-  <style media="screen">
-    video {
-      padding-top: 90px;
-    }
-  </style>
 
   <!-- Services Section -->
   <section id="about">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <h2 class="section-heading">Free Bootstrap</h2>
+        <h2 class="section-heading text-center">Joining the chabblet is quick and easy</h2>
+        <div class="col-md-3 text-center center">
+          <img class="img-circle img-responsive center-block" src="img/happy.png" width="150px" alt="">
+          <strong class="step">Step 1</strong>
+          <p class="p-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod pretium nisi, vel rhoncus eros sodales ac. Curabitur sit amet tortor augue.</p>
         </div>
-        <div class="col-md-6">
-          <p class="p-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut vulputate massa. Duis lorem odio, facilisis et massa non, pharetra accumsan neque. Suspendisse hendrerit congue velit eu posuere. Vivamus vitae ligula faucibus, posuere enim at,
-            porta urna. Morbi malesuada tincidunt fermentum.</p>
-          <p class="span-about">Morbi malesuada tincidunt fermentum.</p>
+        <div class="col-md-3 text-center center">
+          <img class="img-circle img-responsive center-block" src="img/happy.png" width="150px" alt="">
+          <strong class="step">Step 1</strong>
+          <p class="p-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod pretium nisi, vel rhoncus eros sodales ac. Curabitur sit amet tortor augue.</p>
+        </div>
+        <div class="col-md-3 text-center center">
+          <img class="img-circle img-responsive center-block" src="img/happy.png" width="150px" alt="">
+          <strong class="step">Step 1</strong>
+          <p class="p-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod pretium nisi, vel rhoncus eros sodales ac. Curabitur sit amet tortor augue.</p>
+        </div>
+        <div class="col-md-3 text-center center">
+          <img class="img-circle img-responsive center-block" src="img/happy.png" width="150px" alt="">
+          <strong class="step">Step 1</strong>
+          <p class="p-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod pretium nisi, vel rhoncus eros sodales ac. Curabitur sit amet tortor augue.</p>
         </div>
       </div>
     </div>
@@ -109,7 +126,20 @@
   <!-- Portfolio Grid Section -->
   <section id="portfolio" class="bg-light-gray">
     <div class="container">
-      <div class="row">
+
+      <div class="col-md-5">
+        <video width="520" controls poster="img/header.jpg">
+          <source src="video/chabble_video.mp4" type="video/mp4">
+          <source src="video/chabble_sound.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+          </video>
+      </div>
+      <div class="col-md-6 col-md-offset-1 text-center">
+        <h2 class="section-heading">How does the chabblet work?</h2>
+        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas dignissim ullamcorper.<br> Sed ut orci rutrum, bibendum nisl a, bibendum massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas dignissim ullamcorper.<br> Sed ut orci rutrum, bibendum nisl a, bibendum massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas dignissim ullamcorper.</h3>
+      </div>
+
+      <!-- <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading">Portfolio</h2>
           <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas dignissim ullamcorper.<br> Sed ut orci rutrum, bibendum nisl a, bibendum massa. </h3>
@@ -200,14 +230,24 @@
             <p class="text-muted">Product Identity</p>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 
   <!-- About Section -->
   <section id="services">
     <div class="container">
-      <div class="row">
+
+      <div class="col-md-6 text-center">
+        <h2 class="section-heading">Who is Chabblet for?</h2>
+        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas dignissim ullamcorper.<br> Sed ut orci rutrum, bibendum nisl a, bibendum massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas dignissim ullamcorper.<br> Sed ut orci rutrum, bibendum nisl a, bibendum massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas dignissim ullamcorper.<br> Sed ut orci rutrum, bibendum nisl a, bibendum massa. </h3>
+      </div>
+
+      <div class="col-md-5 col-md-offset-1">
+        <img class="img-responsive img-rounded" src="img/happy.png" alt="">
+      </div>
+
+      <!-- <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading">Services</h2>
           <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas dignissim ullamcorper.<br>Sed ut orci rutrum, bibendum nisl a, bibendum massa.</h3>
@@ -235,14 +275,23 @@
         <div class="col-md-6">
           <a href="https://dribbble.com/shots/1317713-iPad-Air-Template"><img src="img/portfolio/08.png" class="img-responsive" alt=""></a>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 
   <!-- Team Section -->
   <section id="clients" class="bg-light-gray">
     <div class="container">
-      <div class="row">
+
+      <div class="col-md-4">
+        <img class="img-responsive img-rounded" src="img/happy.png" alt="">
+      </div>
+      <div class="col-md-7 col-md-offset-1 text-center">
+        <h2 class="section-heading">Join our personal Chabblet for just 16p per day!</h2>
+        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas dignissim ullamcorper.<br> Sed ut orci rutrum, bibendum nisl a, bibendum massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas dignissim ullamcorper.<br> Sed ut orci rutrum, bibendum nisl a, bibendum massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas dignissim ullamcorper.</h3>
+      </div>
+
+      <!-- <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading">Our Clients</h2>
           <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis,<br> quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</h3>
@@ -270,7 +319,66 @@
                         <img src="img/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
                     </a>
         </div>
+      </div> -->
+    </div>
+  </section>
+
+  <section id="clients2">
+    <div class="container">
+
+      <div class="col-md-6 text-center">
+        <h2 class="section-heading">Recommended by health professionals</h2>
+        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas dignissim ullamcorper.<br> Sed ut orci rutrum, bibendum nisl a, bibendum massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas dignissim ullamcorper.<br> Sed ut orci rutrum, bibendum nisl a, bibendum massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas dignissim ullamcorper.<br> Sed ut orci rutrum, bibendum nisl a, bibendum massa. </h3>
       </div>
+
+      <div class="col-md-5 col-md-offset-1">
+        <img class="img-responsive img-rounded" src="img/happy.png" alt="">
+      </div>
+
+    </div>
+  </section>
+
+  <section id="clients3" class="bg-light-gray">
+    <div class="container">
+
+      <h2 class="section-heading text-center" style="padding-bottom: 20px;">Testimonials</h2>
+
+      <div class="col-md-6">
+        <blockquote class="blockquote">
+          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        </blockquote>
+        <blockquote class="blockquote">
+          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        </blockquote>
+        <blockquote class="blockquote">
+          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        </blockquote>
+      </div>
+
+      <div class="col-md-6">
+        <blockquote class="blockquote">
+          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        </blockquote>
+        <blockquote class="blockquote">
+          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        </blockquote>
+        <blockquote class="blockquote">
+          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        </blockquote>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="ads" style="padding-top: 0px;padding-bottom: 0px;">
+    <div class="container">
+      <img src="img/ads.png" width="100%" height="200px" alt="">
     </div>
   </section>
 
@@ -279,9 +387,43 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Contact Us</h2>
+          <h2 class="section-heading">Contact us for special orders</h2>
           <h3 class="section-subheading text-muted bottom-margin-sm">Lorem ipsum dolor sit amet consectetur.</h3>
-          <a target="_blank" href="mailto:contact@creative.com" class="btn btn-xl">contact@creative.com</a>
+
+          <form class="form-horizontal">
+            <div class="form-group">
+              <div class="col-sm-10 col-sm-offset-1">
+                <input type="text" class="form-control" id="inputName" placeholder="Name">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-10 col-sm-offset-1">
+                <input type="text" class="form-control" id="inputLastName" placeholder="Last name">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-10 col-sm-offset-1">
+                <input type="text" class="form-control" id="inputAge" placeholder="Age">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-10 col-sm-offset-1">
+                <input type="email" class="form-control" id="inputAge" placeholder="email">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-10 col-sm-offset-1">
+                <input type="text" class="form-control" id="inputAge" placeholder="Telephone number">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="center-block">
+                <button type="submit" class="btn btn-xl">Send</button>
+              </div>
+            </div>
+          </form>
+
         </div>
       </div>
 
@@ -293,7 +435,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <span class="copyright">Unitalk <a href="https://www.unitalkltd.com/"></a></span>
+          <span class="copyright"><a href="https://www.unitalkltd.com/">Unitalk</a></span>
         </div>
       </div>
     </div>
