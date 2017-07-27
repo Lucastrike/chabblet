@@ -172,7 +172,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-custom {
-    background-color: #222222;
+    background-color: #fafafa;
     border-color: transparent
 }
 
@@ -342,7 +342,7 @@ section h3.section-subheading {
 
 @media (min-width: 768px) {
     section {
-        padding: 100px 0
+        padding: 60px 0
     }
 }
 
