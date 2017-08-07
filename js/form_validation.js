@@ -6,7 +6,7 @@ $(document).ready(function(){
 
   $.validator.addMethod("regx", function(value) {
     var expression = /^[a-zA-Z]*$/;
-    if (expression.test(value) || value == "")
+    if (expression.test(value))
       return true;
     else
       return false;
@@ -15,9 +15,11 @@ $(document).ready(function(){
   $("#form-client").validate({
     rules: {
       name: {
+        required: true,
         regx: true
       },
       lastname: {
+        required: true,
         regx: true
       },
       age: {
@@ -41,8 +43,67 @@ $(document).ready(function(){
       telephone: "Please enter a valid telephone"
     },
     submitHandler: function() {
-      alert("well done!");
+      sendMail();
     }
   });
+
+  function sendMail(){
+
+    var name = $("#inputName").val();
+    var lastName = $("#inputLastName").val();
+    var age = $("#inputAge").val();
+    var email = $("#inputEmail").val();
+    var telephone = $("#inputTelephone").val();
+
+  //   $.ajax({
+  //       type: 'POST',
+  //       url: 'php/sendMail.php',
+  //       data: {
+  //         emailin: emailin,
+  //         passwordin: passwordin
+  //       },
+  //       success: function(data){
+  //         console.log("data es " + data);
+  //         if (data == 1) {
+  //           location.href="Admin/index.php";
+  //         }
+  //         else if (data == 0) {
+  //           alert("(T_T) No cuela, registrate! (T_T)");
+  //         }
+  //       },
+  //       error: function(jqXHR, textStatus, errorThrown){
+  //       if (jqXHR.status === 0) {
+  //
+  //       alert('Not connect: Verify Network.');
+  //
+  //     } else if (jqXHR.status == 404) {
+  //
+  //       alert('Requested page not found [404]');
+  //
+  //     } else if (jqXHR.status == 500) {
+  //
+  //       alert('Internal Server Error [500].');
+  //
+  //     } else if (textStatus === 'parsererror') {
+  //
+  //       alert('Requested JSON parse failed.');
+  //
+  //     } else if (textStatus === 'timeout') {
+  //
+  //       alert('Time out error.');
+  //
+  //     } else if (textStatus === 'abort') {
+  //
+  //       alert('Ajax request aborted.');
+  //
+  //     } else {
+  //
+  //       alert('Uncaught Error: ' + jqXHR.responseText);
+  //
+  //     }
+  //   }
+  //
+  // });
+  }
 
 });

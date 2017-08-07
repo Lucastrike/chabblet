@@ -121,7 +121,8 @@ fieldset[disabled] .btn-primary.active {
 
 .btn-xl {
     color: white;
-    background-color: #617fde;
+    /*background-color: #617fde;*/
+    background-color: #4e57a9;
     border-color: #617fde;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
@@ -224,7 +225,8 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .navbar-nav > .active > a {
     border-radius: 0;
     color: white;
-    background-color: #617fde
+    /*background-color: #617fde*/
+    background-color: #4e57a9;
 }
 
 .navbar-custom .navbar-nav > .active > a:hover,
