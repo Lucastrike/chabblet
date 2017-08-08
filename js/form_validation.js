@@ -55,55 +55,62 @@ $(document).ready(function(){
     var email = $("#inputEmail").val();
     var telephone = $("#inputTelephone").val();
 
-  //   $.ajax({
-  //       type: 'POST',
-  //       url: 'php/sendMail.php',
-  //       data: {
-  //         emailin: emailin,
-  //         passwordin: passwordin
-  //       },
-  //       success: function(data){
-  //         console.log("data es " + data);
-  //         if (data == 1) {
-  //           location.href="Admin/index.php";
-  //         }
-  //         else if (data == 0) {
-  //           alert("(T_T) No cuela, registrate! (T_T)");
-  //         }
-  //       },
-  //       error: function(jqXHR, textStatus, errorThrown){
-  //       if (jqXHR.status === 0) {
-  //
-  //       alert('Not connect: Verify Network.');
-  //
-  //     } else if (jqXHR.status == 404) {
-  //
-  //       alert('Requested page not found [404]');
-  //
-  //     } else if (jqXHR.status == 500) {
-  //
-  //       alert('Internal Server Error [500].');
-  //
-  //     } else if (textStatus === 'parsererror') {
-  //
-  //       alert('Requested JSON parse failed.');
-  //
-  //     } else if (textStatus === 'timeout') {
-  //
-  //       alert('Time out error.');
-  //
-  //     } else if (textStatus === 'abort') {
-  //
-  //       alert('Ajax request aborted.');
-  //
-  //     } else {
-  //
-  //       alert('Uncaught Error: ' + jqXHR.responseText);
-  //
-  //     }
-  //   }
-  //
-  // });
+    console.log(name + "\n" + lastName + "\n" + age + "\n" + email + "\n" + telephone);
+
+    $.ajax({
+        type: 'POST',
+        url: 'php/sendMail.php',
+        data: {
+          name: name,
+          lastName: lastName,
+          age: age,
+          email: email,
+          telephone: telephone
+        },
+        success: function(data){
+          console.log("data es " + data);
+          if (data == 1) {
+            //alert("Sended! tangodown");
+            alert(data);
+          }
+          else if (data == 0) {
+            //alert("ERROR tangodown");
+            alert(data);
+          }
+        },
+        error: function(jqXHR, textStatus, errorThrown){
+        if (jqXHR.status === 0) {
+
+        alert('Not connect: Verify Network.');
+
+      } else if (jqXHR.status == 404) {
+
+        alert('Requested page not found [404]');
+
+      } else if (jqXHR.status == 500) {
+
+        alert('Internal Server Error [500].');
+
+      } else if (textStatus === 'parsererror') {
+
+        alert('Requested JSON parse failed.');
+
+      } else if (textStatus === 'timeout') {
+
+        alert('Time out error.');
+
+      } else if (textStatus === 'abort') {
+
+        alert('Ajax request aborted.');
+
+      } else {
+
+        alert('Uncaught Error: ' + jqXHR.responseText);
+
+      }
+    }
+
+  });
   }
 
 });
