@@ -32,7 +32,8 @@ $(document).ready(function(){
       },
       telephone: {
         required: true,
-        digits: true
+        digits: true,
+        maxlength: 11
       }
     },
     messages: {
@@ -70,12 +71,10 @@ $(document).ready(function(){
         success: function(data){
           console.log("data es " + data);
           if (data == 1) {
-            //alert("Sended! tangodown");
-            alert(data);
+            alert("Sended! tangodown");
           }
           else if (data == 0) {
-            //alert("ERROR tangodown");
-            alert(data);
+            alert("ERROR tangodown");
           }
         },
         error: function(jqXHR, textStatus, errorThrown){
