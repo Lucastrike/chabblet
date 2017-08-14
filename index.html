@@ -80,9 +80,6 @@
     video {
       margin-top: 70px;
     }
-    li {
-      margin-bottom: 5px;
-    }
     #ads {
       padding-top: 50px;
       padding-bottom: 50px;
@@ -92,6 +89,19 @@
     }
     .imgPrice {
       margin-top: 100px;
+    }
+
+    .navbar-custom .nav li a {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .fitting {
+      width: 30px;
+      height: 50px;
+    }
+    .fitting3 {
+      width: 100px;
+      height: 50px;
     }
   </style>
 
@@ -110,30 +120,33 @@
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <div class="collapse navbar-collapse text-center" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li>
+          <li class="hidden-xs">
             <span><a class="navbar-brand page-scroll" href="#page-top"><img src="img/logos/chabble_logo.png" class="logo img-responsive" width="80px" alt="" style="border-radius: 5px;width: 100px;margin-top: -15px;"></a></span>
           </li>
-          <li style="width: 50px;"></li>
           <li class="hidden">
             <a href="#page-top"></a>
           </li>
+          <li class="fitting visible-md"></li>
+          <li class="fitting3 visible-lg"></li>
           <li>
-            <a class="page-scroll" href="#portfolio">Chabblet's Key Features</a>
+            <a class="page-scroll" href="#portfolio">Key Features</a>
           </li>
           <li>
-            <a class="page-scroll" href="#services">Who is it for?</a>
+            <a class="page-scroll visible-md visible-lg" href="#services">Who is it for?</a>
           </li>
           <li>
             <a class="page-scroll" href="#clients">Price</a>
           </li>
           <li>
-            <a class="page-scroll" href="#about">Join Chabblet</a>
+            <a class="page-scroll" href="#about">Order</a>
           </li>
           <li>
             <a class="page-scroll" href="#clients3">Testimonials</a>
           </li>
+          <li class="fitting visible-md"></li>
+          <li class="fitting3 visible-lg"></li>
           <li>
             <a class="page-scroll text-center contact" href="#contact" style="font-size: 0.9em;">02920 003250 <br> ORDER / Ask for Demo</a>
           </li>
@@ -164,7 +177,7 @@
         <h2 class="section-heading in">About Chabblet</h2>
         <h3 class="section-subheading text-muted text-left">
           Chabblet is a unique, multi-purpose 'Communications and Activities Aid' powered by TouchPhrase&reg; Technology.<br><br> Simple to use, Chabblet has many key communication and activities features that are instant, simple and easy to use requiring 'one touch'.<br><br>
-      Chabblet is suitable for all ages and can be used on android or iOS tablets or smart phones.</h3>
+      Chabblet is suitable for all ages and abilities.</h3>
       </div>
 
       <div class="col-md-5 col-md-offset-1 padd">
@@ -201,7 +214,7 @@
   </section>
 
   <!-- About Section -->
-  <section id="services">
+  <section class="visible-md visible-lg" id="services">
     <div class="container">
 
       <div class="col-md-6 text-center padd" style="margin-top: 50px;">
@@ -223,20 +236,62 @@
         <img class="img-responsive img-rounded center-block" src="img/team/picture2.png" alt="">
       </div>
 
+      <style media="screen">
+        .liBlock span {
+          margin: 0px;
+        }
+        .liBlock {
+          display: inline-block;
+        }
+      </style>
+
       <div class="col-md-8 text-center padd">
         <h2 class="section-heading in">CHABBLET Package <br> ONLY £499.00, includes:</h2>
         <h3 class="section-subheading text-muted"><ul class="text-left list-unstyled">
-          <li><span class="symbol-check">&#10004;</span> 10”, 16GB Android Tablet with Camera, Charger and Protective Case.</li>
-          <li><span class="symbol-check">&#10004;</span> Accessory Set/Stylus/Cleaning Kit/Carry Case.</li>
-          <li><span class="symbol-check">&#10004;</span> External bluetooth Speakers and Cables for TV use.</li>
-          <li><span class="symbol-check">&#10004;</span> Organisation’s Logo/Branding, Bespoke Free Apps/Pain Charts etc added.</li>
-          <li><span class="symbol-check">&#10004;</span> 12 Month Manufacturer’s Hardware Warranty.</li>
-          <li><span class="symbol-check">&#10004;</span> Annual ‘CHABBLE’ License.</li>
-          <li><span class="symbol-check">&#10004;</span> 2 x Friends and Family CHABBLE Gift Vouchers (worth £99.98, FREE!).</li>
-          <li><span class="symbol-check">&#10004;</span> Set-up Training for Staff and Clients.</li>
-          <li><span class="symbol-check">&#10004;</span> CHABBLET User Guide.</li>
-          <li><span class="symbol-check">&#10004;</span> Framed Exemplar Certificate and Frame.</li>
-          <li><span class="symbol-check">&#10004;</span> 12 Month Ongoing Support including Free Updates.</li>
+          <li class="liBlock"><div class="points col-xs-11 pull-right">
+            <span class="symbol-check">&#10004;</span>
+            10”, 16GB Android Tablet with Camera, Charger and Protective Case.
+          </div></li>
+          <li class="liBlock"><div class="points col-xs-11 pull-right">
+            <span class="symbol-check">&#10004;</span>
+            Accessory Set/Stylus/Cleaning Kit/Carry Case.
+          </div></li>
+          <li class="liBlock"><div class="points col-xs-11 pull-right">
+            <span class="symbol-check">&#10004;</span>
+            External bluetooth Speakers and Cables for TV use.
+          </div></li>
+          <li class="liBlock"><div class="points col-xs-11 pull-right">
+            <span class="symbol-check">&#10004;</span>
+            Organisation’s Logo/Branding, Bespoke Free Apps/Pain Charts etc added.
+          </div></li>
+          <li class="liBlock"><div class="points col-xs-11 pull-right">
+            <span class="symbol-check">&#10004;</span>
+            12 Month Manufacturer’s Hardware Warranty.
+          </div></li>
+          <li class="liBlock"><div class="points col-xs-11 pull-right">
+            <span class="symbol-check">&#10004;</span>
+            Annual ‘CHABBLE’ License.
+          </div></li>
+          <li class="liBlock"><div class="points col-xs-11 pull-right">
+            <span class="symbol-check">&#10004;</span>
+            2 x Friends and Family CHABBLE Gift Vouchers (worth £99.98, FREE!).
+          </div></li>
+          <li class="liBlock"><div class="points col-xs-11 pull-right">
+            <span class="symbol-check">&#10004;</span>
+            Free Set-up Training for Staff and Clients (Location dependant).
+          </div></li>
+          <li class="liBlock"><div class="points col-xs-11 pull-right">
+            <span class="symbol-check">&#10004;</span>
+            CHABBLET User Guide.
+          </div></li>
+          <li class="liBlock"><div class="points col-xs-11 pull-right">
+            <span class="symbol-check">&#10004;</span>
+            Framed Exemplar Certificate and Frame.
+          </div></li>
+          <li class="liBlock"><div class="points col-xs-11 pull-right">
+            <span class="symbol-check">&#10004;</span>
+            12 Month Ongoing Support including Free Updates.
+          </div></li>
         </ul>
         Annual Contract (2nd Year only £49.99)<br>
         Discounts available where 3 or more purchased.
@@ -271,7 +326,7 @@
   </section>
 
   <!-- Team Section -->
-  <section id="clients4" class="bg-light-gray">
+  <section id="clients4" class="bg-light-gray visible-md visible-lg">
     <div class="container">
 
       <div class="col-md-4 padd">
@@ -294,7 +349,7 @@
     </div>
   </section>
 
-  <section id="clients2">
+  <section id="clients2" class="visible-md visible-lg">
     <div class="container">
 
       <div class="col-md-6 text-center padd" style="margin-top: 50px;">
@@ -315,25 +370,20 @@
     <div class="container">
       <div class="row">
         <h2 class="section-heading text-center in">Ordering Chabblet is Quick and Easy</h2>
-        <div class="col-md-3 text-center center">
-          <img class="img-circle img-responsive center-block" src="img/team/contact-form2.png" alt="">
+        <div class="col-md-4 text-center center">
+          <img class="img-circle img-responsive center-block" src="img/team/form.jpg" alt="">
           <strong class="step in">Step 1</strong>
           <p class="p-about">Place your online order by completing the <a class="page-scroll" href="#contact">contact form</a> or call us on <strong class="in">02920 003250.</strong></p>
         </div>
-        <div class="col-md-3 text-center center">
+        <div class="col-md-4 text-center center">
           <img class="img-circle img-responsive center-block" src="img/team/step1.jpg" alt="">
           <strong class="step in">Step 2</strong>
-          <p class="p-about">The Chabblet Team will discuss your requirements, or come out to see you to provide a demo.</p>
+          <p class="p-about">The Chabblet Team will discuss your requirements, or come out to see you to provide a free demonstration.</p>
         </div>
-        <div class="col-md-3 text-center center">
+        <div class="col-md-4 text-center center">
           <img class="img-circle img-responsive center-block" src="img/team/step3.jpg" alt="">
           <strong class="step in">Step 3</strong>
-          <p class="p-about">Your Chabblet will be built and delivered to you.</p>
-        </div>
-        <div class="col-md-3 text-center center">
-          <img class="img-circle img-responsive center-block" src="img/team/step3a.jpg" alt="">
-          <strong class="step in">Step 4</strong>
-          <p class="p-about">Training and On-going support can also be provided. Ask us for further information.</p>
+          <p class="p-about">Your Chabblet will be built and delivered to you, including a comprehensive User Guide. On-going Support is also provided.</p>
         </div>
       </div>
     </div>
@@ -347,8 +397,7 @@
       <div class="col-md-6">
         <blockquote class="blockquote">
           <p class="mb-0"><em>“…We have bought 5 Chabble devices, one for each of our suites, with the aim of capturing magic moments in pictures, film and sound which residents can share with their loved ones. We also aim to use the chabble devices to assist staff and family
-            members to better support residents with communication deficits as they use key phrases and pictures to clarify their needs and wishes. Martin has been a wonderful resource, very committed and going over and above what I expected from the
-            company…”</em></p>
+            members to better support residents with communication deficits as they use key phrases and pictures to clarify their needs and wishes.”</em></p>
           <footer class="blockquote-footer">Lisa Kieh <cite title="Source Title">(Gofal a Chymorth/ Gwalia Care & Support)</cite></footer>
         </blockquote>
         <blockquote class="blockquote">
@@ -366,7 +415,7 @@
         </blockquote>
         <blockquote class="blockquote">
           <p class="mb-0"><em>“… Chabble is a great way for youngsters with learning disabilities to communicate if they have a condition that has affected their speech. I have worked with several people where Chabble would have not only helped in their daily life but also
-            with rehabilitation. Some children on the Autistic spectrum find it difficult sometimes to interact with others or if they are living independently need ways to communicate with their families and friends. Chabble is not only easy to use but
+            with rehabilitation. Chabble is not only easy to use but
             totally safe that is also important to me…”</em></p>
           <footer class="blockquote-footer">Sue Mackey <cite title="Source Title">(Key Worker and Mother of daughter Vickey with learning disabilities)</cite></footer>
         </blockquote>
@@ -375,7 +424,7 @@
     </div>
   </section>
 
-  <section id="training">
+  <section id="training" class="visible-md visible-lg">
     <div class="container">
 
       <div class="col-md-5 padd">
@@ -384,7 +433,7 @@
 
       <div class="col-md-6 col-md-offset-1 text-center padd" style="margin-top: 50px;">
         <h2 class="section-heading in">Chabblet One-Day Training</h2>
-        <h3 class="section-subheading text-muted text-center">For those interested in learning more about all of Chabblet's Features, our one-day Chabblet Training offers Professionals and Care Staff a unique insight into how Chabblet can be used to promote communication and engagement, and be used creativly for activities that facilitate cognitive reabilitation and Reminiscence Therapy, and so much more!.</h3>
+        <h3 class="section-subheading text-muted text-center">For those interested in learning more about all of Chabblet's Features, our one-day Chabblet Training offers Professionals and Care Staff a unique insight into how Chabblet can be used to promote communication and engagement, and be used creatively for activities that facilitate cognitive rehabilitation and Reminiscence Therapy, and so much more!.</h3>
       </div>
 
     </div>
@@ -482,7 +531,10 @@
         <div class="col-md-3 divFooter">
           <h3>Contact details</h3>
           <hr>
-          <p>Chabblet is a Product designed by UniTalk ltd, check us at <a href="unitalkltd.com" target="_blank">unitalkltd.com</a></p>
+          <p>UniTalk Ltd</p>
+          <p>28a Cardiff Road, Taffs Well</p>
+          <p>Cardiff, United Kingdom, CF15 7RF</p>
+          <p>Telephone +44 (0)29 2000 3250</p>
         </div>
       </div>
     </div>
