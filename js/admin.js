@@ -1,16 +1,6 @@
 $(document).ready(function() {
 
-  if (localStorage.getItem("loggedin") != "true") {
-    $("#modal").modal('show');
-  } else {
-    getUsers();
-    $(".logout").removeClass('hidden');
-  }
-
-  $(".logout").on('click', function(){
-    localStorage.setItem("loggedin", "false");
-    location.reload();
-  });
+  $("#modal").modal('show');
 
   $("#login").on('click', function() {
     var user = $("#user").val();
@@ -29,7 +19,7 @@ $(document).ready(function() {
           $('#modal').modal('toggle');
           getUsers();
           $(".logout").removeClass('hidden');
-          localStorage.setItem("loggedin", "true");
+          //localStorage.setItem("loggedin", "true");
         } else if (data == 0) {
           alert("(T_T) No cuela, registrate! (T_T)");
         }

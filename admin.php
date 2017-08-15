@@ -1,4 +1,9 @@
+<?php
 
+include ("php/connection.php");
+include ("php/check_active_session.php");
+
+ ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -38,6 +43,7 @@
     .logout {
       margin-right: 0;
       margin-top: 20px;
+      margin-bottom: 20px;
     }
   </style>
 
@@ -47,7 +53,7 @@
 
   <div class="container">
 
-    <button class="btn btn-danger center-block hidden logout" type="button" name="button">Logout</button>
+    <a href="php/close_session.php" class="btn btn-danger center-block hidden logout col-xs-1 pull-right" type="button" name="button">Logout</a>
 
     <div class="modal fade bs-example-modal-sm" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="modal">
       <div class="modal-dialog modal-sm" role="document">
