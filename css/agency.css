@@ -156,7 +156,8 @@ h6 {
 }
 
 .navbar-custom .navbar-toggle:hover, .navbar-custom .navbar-toggle:focus {
-  background-color: #617fde;
+  /*background-color: #617fde;*/
+  background-color: #444ea5;
 }
 
 .navbar-custom .nav li a {
@@ -181,7 +182,8 @@ h6 {
 
 .navbar-custom .navbar-nav>.active>a:hover, .navbar-custom .navbar-nav>.active>a:focus {
   color: white;
-  background-color: #617fde
+  /*background-color: #617fde*/
+  background-color: #444ea5;
 }
 
 @media (min-width: 768px) {
@@ -229,7 +231,7 @@ header {
   min-height: 650px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 400px) {
   header {
     background-image: url('../img/header.jpg');
     background-repeat: no-repeat;
@@ -980,10 +982,10 @@ body {
 }
 
 .contact {
-  background-color: #2dc308 !important;
+  background-color: #444ea5 !important;
   color: white !important;
   border-radius: 5px;
-  box-shadow: 2px 2px 6px 0px black;
+  /*box-shadow: 2px 2px 6px 0px black;*/
 }
 
 .img-circle {
@@ -991,7 +993,7 @@ body {
 }
 
 video {
-  margin-top: 70px;
+  margin-top: 90px;
 }
 
 #ads {
@@ -1004,7 +1006,7 @@ video {
 }
 
 .imgPrice {
-  margin-top: 100px;
+  margin-top: 70px;
 }
 
 .navbar-custom .nav li a {

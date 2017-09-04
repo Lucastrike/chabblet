@@ -19,12 +19,12 @@ $(document).ready(function() {
           $('#modal').modal('toggle');
           getUsers();
           $(".logout").removeClass('hidden');
-          //localStorage.setItem("loggedin", "true");
         } else if (data == 0) {
-          alert("(T_T) No cuela, registrate! (T_T)");
+          alert("Wrong username/password!");
+          $("#user").val("");
+          $("#pass").val("");
         }
       }
-
     });
 
   });

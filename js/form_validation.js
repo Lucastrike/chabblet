@@ -71,11 +71,17 @@ $(document).ready(function(){
         success: function(data){
           console.log("data es " + data);
           if (data == 1) {
-            alert("Sended! tangodown");
+            alert("Thank you for contact us!");
           }
           else if (data == 0) {
-            alert("ERROR tangodown");
+            alert("Ops! Try again in 5 minutes!");
           }
+          $("#inputName").val("");
+          $("#inputLastName").val("");
+          $("#inputAge").val("");
+          $("#inputEmail").val("");
+          $("#inputTelephone").val("");
+          window.location.href = "http://chabblet.com#main";
         },
         error: function(jqXHR, textStatus, errorThrown){
         if (jqXHR.status === 0) {
